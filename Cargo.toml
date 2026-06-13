@@ -1,11 +1,17 @@
 [package]
 name = "spectral-fleet"
-version = "0.2.0"
+version = "0.1.0"
 edition = "2021"
-description = "Spectral graph theory for fleet analysis — eigenvalues, Fiedler vector, spectral clustering"
+description = "Spectral graph theory for AI agent fleet analysis and optimization"
 license = "MIT"
-keywords = ["spectral", "graph", "fleet", "clustering", "eigenvalue"]
-categories = ["mathematics", "algorithms"]
 repository = "https://github.com/SuperInstance/spectral-fleet"
+keywords = ["graph", "spectral", "clustering", "fleet", "agents"]
+categories = ["mathematics", "science"]
 
 [dependencies]
+ndarray = "0.16"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[dev-dependencies]
+approx = "0.5"
